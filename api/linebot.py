@@ -36,15 +36,15 @@ def handle_message(event):
 
     image_carousel_columns = [
         ImageCarouselColumn(
-            image_url='https://example.com/image1.jpg',
+            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg',
             action=MessageAction(label='Button 1', text='Button 1 pressed')
         ),
         ImageCarouselColumn(
-            image_url='https://example.com/image2.jpg',
+            image_url='https://jimmy2130.github.io/WestGolf/images/VincentLu.jpg',
             action=MessageAction(label='Button 2', text='Button 2 pressed')
         ),
         ImageCarouselColumn(
-            image_url='https://example.com/image3.jpg',
+            image_url='https://jimmy2130.github.io/WestGolf/images/KaiChan.jpg',
             action=MessageAction(label='Button 3', text='Button 3 pressed')
         )
     ]
