@@ -34,35 +34,17 @@ def callback():
 @line_handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
 
-    if event.message.text == 'carousel':
+    if event.message.text == '教練資訊':
         carousel_template = TemplateSendMessage(
             alt_text = 'carousel template',
             template = CarouselTemplate(
                 columns = [
                     #第一個
                     CarouselColumn(
-                        thumbnail_image_url = 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
-                        title = 'this is menu1',
-                        text = 'menu1',
-                        actions = [
-                            MessageAction(
-                                label = '咖啡有什麼好處',
-                                text = '讓人有精神'),
-                            URIAction(
-                                label = '伯朗咖啡',
-                                uri = 'https://www.mrbrown.com.tw/')]),
+                        thumbnail_image_url = 'https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg'),
                     #第二個
                     CarouselColumn(
-                        thumbnail_image_url = 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
-                        title = 'this is menu2',
-                        text = 'menu2',
-                        actions = [
-                            MessageAction(
-                                label = '咖啡有什麼好處',
-                                text = '讓人有精神'),
-                            URIAction(
-                                label = '伯朗咖啡',
-                                uri = 'https://www.mrbrown.com.tw/')])
+                        thumbnail_image_url = 'https://jimmy2130.github.io/WestGolf/images/VincentLu.jpg')
                 ])
             )
 
