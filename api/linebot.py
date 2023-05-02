@@ -1,9 +1,8 @@
 from flask import Flask, request, abort
 from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
-from linebot.models import MessageEvent, TextMessage, TextSendMessage
-
-
+from linebot.models import (MessageEvent, TextMessage, TextSendMessage, TemplateSendMessage, CarouselColumn,
+                            CarouselTemplate, MessageAction, URIAction)
 import os
 
 line_bot_api = LineBotApi(os.getenv("LINE_CHANNEL_ACCESS_TOKEN"))
@@ -34,10 +33,40 @@ def callback():
 
 @line_handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    if event.message.text == 'hi':
-        line_bot_api.reply_message(
-            event.reply_token,
-            TextSendMessage(text='cool'))
+
+    if event.message.text == 'carousel':
+        carousel_template = TemplateSendMessage(
+            alt_text = 'carousel template',
+            template = CarouselTemplate(
+                columns = [
+                    #第一個
+                    CarouselColumn(
+                        thumbnail_image_url = 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+                        title = 'this is menu1',
+                        text = 'menu1',
+                        actions = [
+                            MessageAction(
+                                label = '咖啡有什麼好處',
+                                text = '讓人有精神'),
+                            URIAction(
+                                label = '伯朗咖啡',
+                                uri = 'https://www.mrbrown.com.tw/')]),
+                    #第二個
+                    CarouselColumn(
+                        thumbnail_image_url = 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+                        title = 'this is menu2',
+                        text = 'menu2',
+                        actions = [
+                            MessageAction(
+                                label = '咖啡有什麼好處',
+                                text = '讓人有精神'),
+                            URIAction(
+                                label = '伯朗咖啡',
+                                uri = 'https://www.mrbrown.com.tw/')])
+                ])
+            )
+
+        line_bot_api.reply_message(event.reply_token, carousel_template)
 
 
 if __name__ == "__main__":
