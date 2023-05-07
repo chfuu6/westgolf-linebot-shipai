@@ -63,14 +63,24 @@ def handle_message(event):
 週一至週五 08:00-22:00\n\
 週六、週日 08:00-19:00\n\n\
 碧潭門市\n\
-電話：2212-4779\n\n\
+電話：2212-6041\n\n\
 地址：新北市新店區溪洲路121號\n\
 Line ID：@298yqvcd (要加@)\n\
 營業時間：\n\
 週一至週五 09:30-22:00\n\
 週六、週日 08:00-19:00'
-    text_businessHours = TextSendMessage(text=businessHours)
 
+    reservation = '感謝您的訊息\n\
+課程預約方式：\n\n\
+若指定教練，請留下\n\
+1、指定教練的姓名，2、自己的聯絡電話、3、預約上課的日期、時段。\n\
+小編會聯繫教練，快速地回覆您的訊息。\n\n\
+若不指定教練，請留下\n\
+1、自己的聯絡電話，2、預約上課的日期、時段。\n\
+小編會盡速為您安排'
+
+    text_businessHours = TextSendMessage(text=businessHours)
+    text_reservation = TextSendMessage(text=reservation)
     image_carousel_template = ImageCarouselTemplate(columns=image_carousel_columns)
     template_message = TemplateSendMessage(
         alt_text='Image Carousel template',
@@ -83,6 +93,8 @@ Line ID：@298yqvcd (要加@)\n\
         line_bot_api.reply_message(event.reply_token, image_fee)
     if event.message.text == '門市資訊':
         line_bot_api.reply_message(event.reply_token, text_businessHours)
+    if event.message.text == '課程預約':
+        line_bot_api.reply_message(event.reply_token, reservation)
 
 
 if __name__ == "__main__":
