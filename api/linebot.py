@@ -2,7 +2,8 @@ from flask import Flask, request, abort
 from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import (MessageEvent, TextMessage, TextSendMessage, TemplateSendMessage, CarouselColumn,
-                            CarouselTemplate, MessageAction, URIAction, ImageCarouselColumn, ImageCarouselTemplate)
+                            CarouselTemplate, MessageAction, URIAction, ImageCarouselColumn, ImageCarouselTemplate,
+                            ImageSendMessage)
 import os
 
 line_bot_api = LineBotApi(os.getenv("LINE_CHANNEL_ACCESS_TOKEN"))
@@ -48,14 +49,19 @@ def handle_message(event):
             action=MessageAction(label='Button 3', text='Button 3 pressed')
         )
     ]
+
+    image_fee = ImageSendMessage(original_content_url='https://imgur.com/a/xyH9XrP')
+
     image_carousel_template = ImageCarouselTemplate(columns=image_carousel_columns)
     template_message = TemplateSendMessage(
         alt_text='Image Carousel template',
         template=image_carousel_template
         )
 
-    if event.message.text == '教練資訊':
+    if event.message.text == '教練介紹':
         line_bot_api.reply_message(event.reply_token, template_message)
+    if event.message.text == '費用介紹':
+        line_bot_api.reply_message(event.reply_token, image_fee)
 
 
 if __name__ == "__main__":
