@@ -51,6 +51,7 @@ def handle_message(event):
     ]
 
     image_fee = ImageSendMessage(original_content_url='https://imgur.com/a/xyH9XrP')
+    text_businessHours = TextSendMessage(text='西鈞高爾夫推廣中心網址\n石牌門市\n電話:2828-7313\n地址：台北市北投區承德路七段223之2號。')
 
     image_carousel_template = ImageCarouselTemplate(columns=image_carousel_columns)
     template_message = TemplateSendMessage(
@@ -62,6 +63,8 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, template_message)
     if event.message.text == '費用介紹':
         line_bot_api.reply_message(event.reply_token, image_fee)
+    if event.message.text == '門市資訊':
+        line_bot_api.reply_message(event.reply_token, text_businessHours)
 
 
 if __name__ == "__main__":
