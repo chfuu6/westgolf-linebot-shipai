@@ -55,7 +55,7 @@ def handle_message(event):
                     preview_image_url='https://i.imgur.com/KDwuzWN_d.webp?maxwidth=760&fidelity=grand')
     
     image_teachers = ImageSendMessage(
-                original_content_url='blob:https://imgur.com/664f6967-31d2-4927-9a3f-08fe52e950ae',
+                original_content_url='https://imgur.com/664f6967-31d2-4927-9a3f-08fe52e950ae',
                 preview_image_url='blob:https://imgur.com/664f6967-31d2-4927-9a3f-08fe52e950ae')
     
     businessHours = '西鈞高爾夫推廣中心\n\
