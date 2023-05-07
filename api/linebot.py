@@ -55,13 +55,13 @@ def handle_message(event):
                     preview_image_url='https://i.imgur.com/KDwuzWN_d.webp?maxwidth=760&fidelity=grand')
     
     businessHours = '西鈞高爾夫推廣中心\n\
-                        網址：https://jimmy2130.github.io/WestGolf/index.html\n\n\
-                        石牌門市\n\
-                        電話：2828-7313\n\n\
-                        地址：台北市北投區承德路七段223之2號\n\
-                        營業時間：\n\
-                        週一至週五 08:00-22:00\n\
-                        週六、週日 08:00-19:00'
+網址：https://jimmy2130.github.io/WestGolf/index.html\n\n\
+石牌門市\n\
+電話：2828-7313\n\n\
+地址：台北市北投區承德路七段223之2號\n\
+營業時間：\n\
+週一至週五 08:00-22:00\n\
+週六、週日 08:00-19:00'
     text_businessHours = TextSendMessage(text=businessHours)
 
     image_carousel_template = ImageCarouselTemplate(columns=image_carousel_columns)
