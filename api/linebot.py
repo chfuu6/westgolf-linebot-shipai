@@ -54,6 +54,10 @@ def handle_message(event):
                     original_content_url='https://i.imgur.com/KDwuzWN_d.webp?maxwidth=760&fidelity=grand',
                     preview_image_url='https://i.imgur.com/KDwuzWN_d.webp?maxwidth=760&fidelity=grand')
     
+    image_teachers = ImageSendMessage(
+                original_content_url='https://imgur.com/a/2U4kUgq',
+                preview_image_url='https://imgur.com/a/2U4kUgq')
+    
     businessHours = '西鈞高爾夫推廣中心\n\
 網址：https://jimmy2130.github.io/WestGolf/index.html\n\n\
 石牌門市\n\
@@ -73,7 +77,7 @@ Line ID：@298yqvcd (要加@)\n\
     reservation = '感謝您的訊息\n\
 課程預約方式：\n\n\
 若指定教練，請留下\n\
-1、指定教練的姓名，2、自己的聯絡電話、3、預約上課的日期、時段。\n\
+1、指定教練的姓名，2、自己的聯絡電話，3、預約上課的日期、時段。\n\
 小編會聯繫教練，快速地回覆您的訊息。\n\n\
 若不指定教練，請留下\n\
 1、自己的聯絡電話，2、預約上課的日期、時段。\n\
@@ -88,7 +92,7 @@ Line ID：@298yqvcd (要加@)\n\
         )
 
     if event.message.text == '教練介紹':
-        line_bot_api.reply_message(event.reply_token, template_message)
+        line_bot_api.reply_message(event.reply_token, image_teachers)
     if event.message.text == '費用介紹':
         line_bot_api.reply_message(event.reply_token, image_fee)
     if event.message.text == '門市資訊':
