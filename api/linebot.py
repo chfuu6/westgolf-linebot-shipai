@@ -94,7 +94,7 @@ Line ID：@298yqvcd (要加@)\n\
     if event.message.text == '門市資訊':
         line_bot_api.reply_message(event.reply_token, text_businessHours)
     if event.message.text == '課程預約':
-        line_bot_api.reply_message(event.reply_token, reservation)
+        line_bot_api.reply_message(event.reply_token, text_reservation)
 
 
 if __name__ == "__main__":
