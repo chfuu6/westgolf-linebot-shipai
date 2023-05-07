@@ -56,7 +56,7 @@ def handle_message(event):
     
     image_teachers = ImageSendMessage(
                 original_content_url='https://imgur.com/664f6967-31d2-4927-9a3f-08fe52e950ae',
-                preview_image_url='blob:https://imgur.com/664f6967-31d2-4927-9a3f-08fe52e950ae')
+                preview_image_url='https://imgur.com/664f6967-31d2-4927-9a3f-08fe52e950ae')
     
     businessHours = '西鈞高爾夫推廣中心\n\
 網址：https://jimmy2130.github.io/WestGolf/index.html\n\n\
