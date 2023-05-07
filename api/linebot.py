@@ -62,7 +62,7 @@ def handle_message(event):
                         營業時間：\n\
                         週一至週五 08:00-22:00\n\
                         週六、週日 08:00-19:00'
-    text_businessHours = TextSendMessage(text='')
+    text_businessHours = TextSendMessage(text=businessHours)
 
     image_carousel_template = ImageCarouselTemplate(columns=image_carousel_columns)
     template_message = TemplateSendMessage(
