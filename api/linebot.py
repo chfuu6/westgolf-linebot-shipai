@@ -50,7 +50,7 @@ def handle_message(event):
         )
     ]
 
-    image_fee = ImageSendMessage(original_content_url='https://imgur.com/a/xyH9XrP')
+    image_fee = ImageSendMessage(original_content_url='https://i.imgur.com/KDwuzWN_d.webp?maxwidth=760&fidelity=grand')
     text_businessHours = TextSendMessage(text='西鈞高爾夫推廣中心網址\n石牌門市\n電話:2828-7313\n地址：台北市北投區承德路七段223之2號。')
 
     image_carousel_template = ImageCarouselTemplate(columns=image_carousel_columns)
