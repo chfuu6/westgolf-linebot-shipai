@@ -37,32 +37,45 @@ def handle_message(event):
 
     image_carousel_columns = [
         ImageCarouselColumn(
-            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg',
-            action=MessageAction(label='Button 1', text='Button 1 pressed')
+            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg'
         ),
         ImageCarouselColumn(
-            image_url='https://jimmy2130.github.io/WestGolf/images/VincentLu.jpg',
-            action=MessageAction(label='Button 2', text='Button 2 pressed')
+            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg'
         ),
         ImageCarouselColumn(
-            image_url='https://jimmy2130.github.io/WestGolf/images/KaiChan.jpg',
-            action=MessageAction(label='Button 3', text='Button 3 pressed')
+            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg'
+        ),
+        ImageCarouselColumn(
+            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg'
+        ),
+        ImageCarouselColumn(
+            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg'
+        ),
+        ImageCarouselColumn(
+            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg'
+        ),
+        ImageCarouselColumn(
+            image_url='https://jimmy2130.github.io/WestGolf/images/VincentLu.jpg'
+        ),
+        ImageCarouselColumn(
+            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg'
+        ),
+        ImageCarouselColumn(
+            image_url='https://jimmy2130.github.io/WestGolf/images/KaiChan.jpg'
         )
     ]
 
     image_fee = ImageSendMessage(
                     original_content_url='https://i.imgur.com/KDwuzWN_d.webp?maxwidth=760&fidelity=grand',
                     preview_image_url='https://i.imgur.com/KDwuzWN_d.webp?maxwidth=760&fidelity=grand')
-    
-    image_teachers = ImageSendMessage(
-                original_content_url='https://i.imgur.com/aZSEbsk_d.webp?maxwidth=760&fidelity=grand',
-                preview_image_url='https://i.imgur.com/aZSEbsk_d.webp?maxwidth=760&fidelity=grand')
+
     
     businessHours = '西鈞高爾夫推廣中心\n\
 網址：https://jimmy2130.github.io/WestGolf/index.html\n\n\
 石牌門市\n\
 電話：2828-7313\n\n\
 地址：台北市北投區承德路七段223之2號\n\
+Line ID：@278cpcwm (要加@)\n\
 營業時間：\n\
 週一至週五 08:00-22:00\n\
 週六、週日 08:00-19:00\n\n\
@@ -87,14 +100,14 @@ Line ID：@298yqvcd (要加@)\n\
     text_reservation = TextSendMessage(text=reservation)
     image_carousel_template = ImageCarouselTemplate(columns=image_carousel_columns)
     template_message = TemplateSendMessage(
-        alt_text='Image Carousel template',
+        alt_text='教練介紹',
         template=image_carousel_template
         )
 
     if event.message.text == '教練介紹':
-        line_bot_api.reply_message(event.reply_token, image_teachers)
-    if event.message.text == '費用介紹':
-        line_bot_api.reply_message(event.reply_token, image_fee)
+        line_bot_api.reply_message(event.reply_token, template_message)
+    # if event.message.text == '費用介紹':
+    #     line_bot_api.reply_message(event.reply_token, image_fee)
     if event.message.text == '門市資訊':
         line_bot_api.reply_message(event.reply_token, text_businessHours)
     if event.message.text == '課程預約':
