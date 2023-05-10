@@ -38,11 +38,11 @@ def handle_message(event):
     image_carousel_columns = [
         ImageCarouselColumn(
             image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg',
-            action = None
+            action=URIAction(uri='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg')
         ),
         ImageCarouselColumn(
             image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg',
-            action = None
+            action=URIAction(uri='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg')
         ),
         # ImageCarouselColumn(
         #     image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg'
