@@ -37,32 +37,34 @@ def handle_message(event):
 
     image_carousel_columns = [
         ImageCarouselColumn(
-            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg'
+            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg',
+            action = None
         ),
         ImageCarouselColumn(
-            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg'
+            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg',
+            action = None
         ),
-        ImageCarouselColumn(
-            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg'
-        ),
-        ImageCarouselColumn(
-            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg'
-        ),
-        ImageCarouselColumn(
-            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg'
-        ),
-        ImageCarouselColumn(
-            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg'
-        ),
-        ImageCarouselColumn(
-            image_url='https://jimmy2130.github.io/WestGolf/images/VincentLu.jpg'
-        ),
-        ImageCarouselColumn(
-            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg'
-        ),
-        ImageCarouselColumn(
-            image_url='https://jimmy2130.github.io/WestGolf/images/KaiChan.jpg'
-        )
+        # ImageCarouselColumn(
+        #     image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg'
+        # ),
+        # ImageCarouselColumn(
+        #     image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg'
+        # ),
+        # ImageCarouselColumn(
+        #     image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg'
+        # ),
+        # ImageCarouselColumn(
+        #     image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg'
+        # ),
+        # ImageCarouselColumn(
+        #     image_url='https://jimmy2130.github.io/WestGolf/images/VincentLu.jpg'
+        # ),
+        # ImageCarouselColumn(
+        #     image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg'
+        # ),
+        # ImageCarouselColumn(
+        #     image_url='https://jimmy2130.github.io/WestGolf/images/KaiChan.jpg'
+        # )
     ]
 
     image_fee = ImageSendMessage(
