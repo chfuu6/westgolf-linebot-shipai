@@ -37,40 +37,40 @@ def handle_message(event):
 
     image_carousel_columns = [
         ImageCarouselColumn(
-            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg',
-            action=URIAction(uri='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg')
+            image_url='https://i.imgur.com/DrFIHA1.jpeg',
+            action=URIAction(uri='https://i.imgur.com/DrFIHA1.jpeg')
         ),
         ImageCarouselColumn(
-            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg',
-            action=URIAction(uri='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg')
+            image_url='https://i.imgur.com/jHR50KF.jpeg',
+            action=URIAction(uri='https://i.imgur.com/jHR50KF.jpeg')
         ),
         ImageCarouselColumn(
-            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg',
-            action=URIAction(uri='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg')
+            image_url='https://i.imgur.com/uqLFtAR.jpeg',
+            action=URIAction(uri='https://i.imgur.com/uqLFtAR.jpeg')
         ),
         ImageCarouselColumn(
-            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg',
-            action=URIAction(uri='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg')
+            image_url='https://i.imgur.com/Sy2MTkQ.jpeg',
+            action=URIAction(uri='https://i.imgur.com/Sy2MTkQ.jpeg')
         ),
         ImageCarouselColumn(
-            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg',
-            action=URIAction(uri='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg')
+            image_url='https://i.imgur.com/doKPQdf.jpeg',
+            action=URIAction(uri='https://i.imgur.com/doKPQdf.jpeg')
         ),
         ImageCarouselColumn(
-            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg',
-            action=URIAction(uri='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg')
+            image_url='https://i.imgur.com/rvz8BId.jpeg',
+            action=URIAction(uri='https://i.imgur.com/rvz8BId.jpeg')
         ),
         ImageCarouselColumn(
-            image_url='https://jimmy2130.github.io/WestGolf/images/VincentLu.jpg',
-            action=URIAction(uri='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg')
+            image_url='https://i.imgur.com/W2n8LN5.jpeg',
+            action=URIAction(uri='https://i.imgur.com/W2n8LN5.jpeg')
         ),
         ImageCarouselColumn(
-            image_url='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg',
-            action=URIAction(uri='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg')
+            image_url='https://i.imgur.com/t2svPXe.jpeg',
+            action=URIAction(uri='https://i.imgur.com/t2svPXe.jpeg')
         ),
         ImageCarouselColumn(
-            image_url='https://jimmy2130.github.io/WestGolf/images/KaiChan.jpg',
-            action=URIAction(uri='https://jimmy2130.github.io/WestGolf/images/GaryLuCrop.jpg')
+            image_url='https://i.imgur.com/CHTkxjH.jpeg',
+            action=URIAction(uri='https://i.imgur.com/CHTkxjH.jpeg')
         )
     ]
 
