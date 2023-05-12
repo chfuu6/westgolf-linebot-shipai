@@ -71,7 +71,7 @@ def reservation(event):
         }
         }
         
-        flex_message = FlexSendMessage(alt_text='門市資訊', contents=flex_button)
+        flex_message = FlexSendMessage(alt_text='課程預約', contents=flex_button)
         return flex_message
     elif event == 'specify':
         flex_specify = {
