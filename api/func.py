@@ -4,7 +4,7 @@ from linebot.models import (MessageEvent, TextMessage, TextSendMessage, Template
                             ImageSendMessage, FlexSendMessage)
 
 def reservation():
-    button1 = {
+    flex_button = {
     "type":"bubble",
     "body":{
         "type":"box",
@@ -68,7 +68,9 @@ def reservation():
         "flex":0
     }
     }
-    return button1
+    
+    flex_message = FlexSendMessage(alt_text='門市資訊', contents=flex_button)
+    return flex_message
     reservation = '感謝您的訊息\n\
 課程預約方式：\n\n\
 指定教練，請留下\n\
