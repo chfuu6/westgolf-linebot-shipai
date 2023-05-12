@@ -361,7 +361,8 @@ def handle_message(event):
                             "layout":"baseline",
                             "spacing":"sm",
                             "contents":[]
-                        }
+                        }                       
+                    ],
                     "paddingEnd":"none"
                 }
                 ]
