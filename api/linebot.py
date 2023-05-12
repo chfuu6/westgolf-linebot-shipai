@@ -360,7 +360,14 @@ def handle_message(event):
                             "type":"box",
                             "layout":"baseline",
                             "spacing":"sm",
-                            "contents":[]
+                            "contents":[
+                            {
+                                "type":"text",
+                                "text":" ",
+                                "flex":1,
+                                "size":"sm"
+                            }
+                            ]
                         }                       
                     ],
                     "paddingEnd":"none"
