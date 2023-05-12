@@ -79,167 +79,323 @@ def handle_message(event):
                     preview_image_url='https://i.imgur.com/KDwuzWN_d.webp?maxwidth=760&fidelity=grand')
     
     flex_storeInfo = {
-        "type": "bubble",
-        "hero": {
-            "type": "image",
-            "url": "https://i.imgur.com/WJRfiH5.jpeg",
-            "size": "full",
-            "aspectRatio": "20:13",
-            "aspectMode": "cover",
-        },
-        "body": {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-            {
-                "type": "text",
-                "text": "石牌門市",
-                "weight": "bold",
-                "size": "xl"
+    "type":"carousel",
+    "contents":[
+        {
+            "type":"bubble",
+            "hero":{
+                "type":"image",
+                "url":"https://i.imgur.com/WJRfiH5.jpeg",
+                "size":"full",
+                "aspectRatio":"20:13",
+                "aspectMode":"cover"
             },
-            {
-                "type": "box",
-                "layout": "vertical",
-                "margin": "lg",
-                "spacing": "sm",
-                "contents": [
+            "body":{
+                "type":"box",
+                "layout":"vertical",
+                "contents":[
                 {
-                    "type": "box",
-                    "layout": "baseline",
-                    "spacing": "sm",
-                    "contents": [
-                    {
-                        "type": "text",
-                        "text": "電話",
-                        "color": "#aaaaaa",
-                        "size": "sm",
-                        "flex": 1
-                    },
-                    {
-                        "type": "text",
-                        "text": "2828-7313",
-                        "color": "#666666",
-                        "size": "sm",
-                        "flex": 5
-                    }
-                    ]
+                    "type":"text",
+                    "text":"石牌門市",
+                    "weight":"bold",
+                    "size":"xl"
                 },
                 {
-                    "type": "box",
-                    "layout": "baseline",
-                    "spacing": "sm",
-                    "contents": [
-                    {
-                        "type": "text",
-                        "text": "地址",
-                        "color": "#aaaaaa",
-                        "size": "sm",
-                        "flex": 1
-                    },
-                    {
-                        "type": "text",
-                        "text": "台北市北投區承德路七段223之2號",
-                        "color": "#666666",
-                        "size": "sm",
-                        "flex": 5,
-                        "adjustMode": "shrink-to-fit",
-                        "wrap": True
-                    }
-                    ]
-                },
-                {
-                    "type": "box",
-                    "layout": "baseline",
-                    "spacing": "sm",
-                    "contents": [
-                    {
-                        "type": "text",
-                        "text": "ID",
-                        "flex": 1,
-                        "color": "#aaaaaa",
-                        "size": "sm"
-                    },
-                    {
-                        "type": "text",
-                        "text": "@278cpcwm",
-                        "flex": 5,
-                        "color": "#666666",
-                        "size": "sm"
-                    }
-                    ]
-                },
-                {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [
-                    {
-                        "type": "text",
-                        "text": "營業時間",
-                        "size": "sm",
-                        "color": "#aaaaaa",
-                        "flex": 1
-                    },
-                    {
-                        "type": "text",
-                        "text": "週一至週五 09:30-22:00",
-                        "size": "sm",
-                        "flex": 5,
-                        "color": "#666666",
-                        "offsetStart": "14px"
-                    },
-                    {
-                        "type": "text",
-                        "text": "週六、週日 08:00-19:00",
-                        "size": "sm",
-                        "flex": 5,
-                        "color": "#666666",
-                        "offsetStart": "14px"
-                    }
+                    "type":"box",
+                    "layout":"vertical",
+                    "margin":"md",
+                    "spacing":"sm",
+                    "contents":[
+                        {
+                            "type":"box",
+                            "layout":"baseline",
+                            "spacing":"sm",
+                            "contents":[
+                            {
+                                "type":"text",
+                                "text":"電話",
+                                "color":"#aaaaaa",
+                                "size":"sm",
+                                "flex":1
+                            },
+                            {
+                                "type":"text",
+                                "text":"2828-7313",
+                                "color":"#666666",
+                                "size":"sm",
+                                "flex":5
+                            }
+                            ]
+                        },
+                        {
+                            "type":"box",
+                            "layout":"baseline",
+                            "spacing":"sm",
+                            "contents":[
+                            {
+                                "type":"text",
+                                "text":"地址",
+                                "color":"#aaaaaa",
+                                "size":"sm",
+                                "flex":1
+                            },
+                            {
+                                "type":"text",
+                                "text":"台北市北投區承德路七段223之2號",
+                                "color":"#666666",
+                                "size":"sm",
+                                "flex":5,
+                                "adjustMode":"shrink-to-fit",
+                                "wrap":True
+                            }
+                            ]
+                        },
+                        {
+                            "type":"box",
+                            "layout":"baseline",
+                            "contents":[
+                            {
+                                "type":"text",
+                                "text":"ID",
+                                "flex":1,
+                                "color":"#aaaaaa",
+                                "size":"sm"
+                            },
+                            {
+                                "type":"text",
+                                "text":"@278cpcwm",
+                                "flex":5,
+                                "color":"#666666",
+                                "size":"sm"
+                            }
+                            ]
+                        },
+                        {
+                            "type":"box",
+                            "layout":"vertical",
+                            "contents":[
+                            {
+                                "type":"text",
+                                "text":"營業時間",
+                                "size":"sm",
+                                "color":"#aaaaaa",
+                                "flex":1
+                            },
+                            {
+                                "type":"text",
+                                "text":"週一至週五 08:00-22:00",
+                                "size":"sm",
+                                "flex":5,
+                                "color":"#666666",
+                                "offsetStart":"14px"
+                            },
+                            {
+                                "type":"text",
+                                "text":"週六、週日 08:00-19:00",
+                                "size":"sm",
+                                "flex":5,
+                                "color":"#666666",
+                                "offsetStart":"14px"
+                            }
+                            ],
+                            "spacing":"sm"
+                        }
                     ],
-                    "spacing": "sm"
+                    "paddingEnd":"none"
                 }
                 ]
+            },
+            "footer":{
+                "type":"box",
+                "layout":"vertical",
+                "spacing":"sm",
+                "contents":[
+                {
+                    "type":"button",
+                    "style":"primary",
+                    "height":"sm",
+                    "action":{
+                        "type":"uri",
+                        "label":"電話",
+                        "uri":"tel:02-28287313"
+                    }
+                },
+                {
+                    "type":"button",
+                    "style":"secondary",
+                    "height":"sm",
+                    "action":{
+                        "type":"uri",
+                        "label":"官方網站",
+                        "uri":"https://jimmy2130.github.io/WestGolf/index.html",
+                        "altUri":{
+                            "desktop":"https://jimmy2130.github.io/WestGolf/index.html"
+                        }
+                    }
+                }
+                ],
+                "flex":0
             }
-            ]
         },
-        "footer": {
-            "type": "box",
-            "layout": "vertical",
-            "spacing": "sm",
-            "contents": [
-            {
-                "type": "button",
-                "style": "primary",
-                "height": "sm",
-                "action": {
-                "type": "uri",
-                "label": "電話",
-                "uri": "tel:02-28287313"
-                }
+        {
+            "type":"bubble",
+            "hero":{
+                "type":"image",
+                "url":"https://i.imgur.com/DoxF2LK.jpeg",
+                "size":"full",
+                "aspectRatio":"20:13",
+                "aspectMode":"cover"
             },
-            {
-                "type": "button",
-                "style": "secondary",
-                "height": "sm",
-                "action": {
-                "type": "uri",
-                "label": "官方網站",
-                "uri": "https://jimmy2130.github.io/WestGolf/index.html",
-                "altUri": {
-                    "desktop": "https://jimmy2130.github.io/WestGolf/index.html"
+            "body":{
+                "type":"box",
+                "layout":"vertical",
+                "contents":[
+                {
+                    "type":"text",
+                    "text":"石牌門市",
+                    "weight":"bold",
+                    "size":"xl"
+                },
+                {
+                    "type":"box",
+                    "layout":"vertical",
+                    "margin":"md",
+                    "spacing":"sm",
+                    "contents":[
+                        {
+                            "type":"box",
+                            "layout":"baseline",
+                            "spacing":"sm",
+                            "contents":[
+                            {
+                                "type":"text",
+                                "text":"電話",
+                                "color":"#aaaaaa",
+                                "size":"sm",
+                                "flex":1
+                            },
+                            {
+                                "type":"text",
+                                "text":"2828-7313",
+                                "color":"#666666",
+                                "size":"sm",
+                                "flex":5
+                            }
+                            ]
+                        },
+                        {
+                            "type":"box",
+                            "layout":"baseline",
+                            "spacing":"sm",
+                            "contents":[
+                            {
+                                "type":"text",
+                                "text":"地址",
+                                "color":"#aaaaaa",
+                                "size":"sm",
+                                "flex":1
+                            },
+                            {
+                                "type":"text",
+                                "text":"新北市新店區溪洲路121號",
+                                "color":"#666666",
+                                "size":"sm",
+                                "flex":5,
+                                "adjustMode":"shrink-to-fit",
+                                "wrap":True
+                            }
+                            ]
+                        },
+                        {
+                            "type":"box",
+                            "layout":"baseline",
+                            "contents":[
+                            {
+                                "type":"text",
+                                "text":"ID",
+                                "flex":1,
+                                "color":"#aaaaaa",
+                                "size":"sm"
+                            },
+                            {
+                                "type":"text",
+                                "text":"@298yqvcd",
+                                "flex":5,
+                                "color":"#666666",
+                                "size":"sm"
+                            }
+                            ]
+                        },
+                        {
+                            "type":"box",
+                            "layout":"vertical",
+                            "contents":[
+                            {
+                                "type":"text",
+                                "text":"營業時間",
+                                "size":"sm",
+                                "color":"#aaaaaa",
+                                "flex":1
+                            },
+                            {
+                                "type":"text",
+                                "text":"週一至週五 09:30-22:00",
+                                "size":"sm",
+                                "flex":5,
+                                "color":"#666666",
+                                "offsetStart":"14px"
+                            },
+                            {
+                                "type":"text",
+                                "text":"週六、週日 08:00-19:00",
+                                "size":"sm",
+                                "flex":5,
+                                "color":"#666666",
+                                "offsetStart":"14px"
+                            }
+                            ],
+                            "spacing":"sm"
+                        }
+                    ],
+                    "paddingEnd":"none"
                 }
-                }
+                ]
             },
-            {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [],
-                "margin": "sm"
+            "footer":{
+                "type":"box",
+                "layout":"vertical",
+                "spacing":"sm",
+                "contents":[
+                {
+                    "type":"button",
+                    "style":"primary",
+                    "height":"sm",
+                    "action":{
+                        "type":"uri",
+                        "label":"電話",
+                        "uri":"tel:02-22126041"
+                    }
+                },
+                {
+                    "type":"button",
+                    "style":"secondary",
+                    "height":"sm",
+                    "action":{
+                        "type":"uri",
+                        "label":"官方網站",
+                        "uri":"https://jimmy2130.github.io/WestGolf/index.html",
+                        "altUri":{
+                            "desktop":"https://jimmy2130.github.io/WestGolf/index.html"
+                        }
+                    }
+                }
+                ],
+                "flex":0
             }
-            ],
-            "flex": 0
         }
+    ]
     }
+
     flex_message = FlexSendMessage(alt_text='門市資訊', contents=flex_storeInfo)
     
     businessHours = '西鈞高爾夫推廣中心\n\
