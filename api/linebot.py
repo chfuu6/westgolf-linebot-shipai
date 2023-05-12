@@ -5,6 +5,7 @@ from linebot.models import (MessageEvent, TextMessage, TextSendMessage, Template
                             CarouselTemplate, MessageAction, URIAction, ImageCarouselColumn, ImageCarouselTemplate,
                             ImageSendMessage, FlexSendMessage)
 import os
+from events import store_info
 
 line_bot_api = LineBotApi(os.getenv("LINE_CHANNEL_ACCESS_TOKEN"))
 line_handler = WebhookHandler(os.getenv("LINE_CHANNEL_SECRET"))
@@ -410,22 +411,6 @@ def handle_message(event):
 
     flex_message = FlexSendMessage(alt_text='門市資訊', contents=flex_storeInfo)
     
-    businessHours = '西鈞高爾夫推廣中心\n\
-網址：https://jimmy2130.github.io/WestGolf/index.html\n\n\
-石牌門市\n\
-電話：2828-7313\n\n\
-地址：台北市北投區承德路七段223之2號\n\
-Line ID：@278cpcwm (要加@)\n\
-營業時間：\n\
-週一至週五 08:00-22:00\n\
-週六、週日 08:00-19:00\n\n\
-碧潭門市\n\
-電話：2212-6041\n\n\
-地址：新北市新店區溪洲路121號\n\
-Line ID：@298yqvcd (要加@)\n\
-營業時間：\n\
-週一至週五 09:30-22:00\n\
-週六、週日 08:00-19:00'
 
     reservation = '感謝您的訊息\n\
 課程預約方式：\n\n\
@@ -436,7 +421,6 @@ Line ID：@298yqvcd (要加@)\n\
 1、自己的聯絡電話，2、預約上課的日期、時段。\n\
 小編會盡速為您安排'
 
-    text_businessHours = TextSendMessage(text=businessHours)
     text_reservation = TextSendMessage(text=reservation)
     image_carousel_template = ImageCarouselTemplate(columns=image_carousel_columns)
     template_message = TemplateSendMessage(
@@ -449,7 +433,7 @@ Line ID：@298yqvcd (要加@)\n\
     # if event.message.text == '費用介紹':
     #     line_bot_api.reply_message(event.reply_token, image_fee)
     if event.message.text == '門市資訊':
-        line_bot_api.reply_message(event.reply_token, flex_message)
+        line_bot_api.reply_message(event.reply_token, store_info(event))
     if event.message.text == '課程預約':
         line_bot_api.reply_message(event.reply_token, text_reservation)
 
