@@ -120,7 +120,7 @@ def handle_message(event):
                         "text": "2828-7313",
                         "color": "#666666",
                         "size": "sm",
-                        "flex": 5
+                        "flex": 6
                     }
                     ]
                 },
@@ -141,7 +141,7 @@ def handle_message(event):
                         "text": "台北市北投區承德路七段223之2號",
                         "color": "#666666",
                         "size": "sm",
-                        "flex": 5,
+                        "flex": 6,
                         "adjustMode": "shrink-to-fit",
                         "wrap": True
                     }
@@ -193,7 +193,7 @@ def handle_message(event):
                 "action": {
                 "type": "uri",
                 "label": "電話",
-                "uri": "tel:1234567890"
+                "uri": "tel:02-28287313"
                 }
             },
             {
@@ -203,7 +203,7 @@ def handle_message(event):
                 "action": {
                 "type": "uri",
                 "label": "官方網站",
-                "uri": "https://linecorp.com",
+                "uri": "https://jimmy2130.github.io/WestGolf/index.html",
                 "altUri": {
                     "desktop": "https://jimmy2130.github.io/WestGolf/index.html"
                 }
