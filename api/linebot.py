@@ -149,6 +149,26 @@ def handle_message(event):
                 },
                 {
                     "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                    {
+                        "type": "text",
+                        "text": "ID",
+                        "flex": 1,
+                        "color": "#aaaaaa",
+                        "size": "sm"
+                    },
+                    {
+                        "type": "text",
+                        "text": "@278cpcwm",
+                        "flex": 5,
+                        "color": "#666666",
+                        "size": "sm"
+                    }
+                    ]
+                },
+                {
+                    "type": "box",
                     "layout": "vertical",
                     "contents": [
                     {
