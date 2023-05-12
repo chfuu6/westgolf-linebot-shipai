@@ -3,7 +3,67 @@ from linebot.models import (MessageEvent, TextMessage, TextSendMessage, Template
                             CarouselTemplate, MessageAction, URIAction, ImageCarouselColumn, ImageCarouselTemplate,
                             ImageSendMessage, FlexSendMessage)
 
-def store_info(event):
+def reservation():
+    reservation = '感謝您的訊息\n\
+課程預約方式：\n\n\
+指定教練，請留下\n\
+1、指定教練的姓名，2、自己的聯絡電話，3、預約上課的日期、時段。\n\
+小編會聯繫教練，快速地回覆您的訊息。\n\n\
+不指定教練，請留下\n\
+1、自己的聯絡電話，2、預約上課的日期、時段。\n\
+小編會盡速為您安排'
+
+    text_reservation = TextSendMessage(text=reservation)
+    return text_reservation
+
+def coach_info():
+    image_carousel_columns = [
+        ImageCarouselColumn(
+            image_url='https://i.imgur.com/DrFIHA1.jpeg',
+            action=URIAction(uri='https://i.imgur.com/DrFIHA1.jpeg')
+        ),
+        ImageCarouselColumn(
+            image_url='https://i.imgur.com/jHR50KF.jpeg',
+            action=URIAction(uri='https://i.imgur.com/jHR50KF.jpeg')
+        ),
+        ImageCarouselColumn(
+            image_url='https://i.imgur.com/uqLFtAR.jpeg',
+            action=URIAction(uri='https://i.imgur.com/uqLFtAR.jpeg')
+        ),
+        ImageCarouselColumn(
+            image_url='https://i.imgur.com/Sy2MTkQ.jpeg',
+            action=URIAction(uri='https://i.imgur.com/Sy2MTkQ.jpeg')
+        ),
+        ImageCarouselColumn(
+            image_url='https://i.imgur.com/doKPQdf.jpeg',
+            action=URIAction(uri='https://i.imgur.com/doKPQdf.jpeg')
+        ),
+        ImageCarouselColumn(
+            image_url='https://i.imgur.com/rvz8BId.jpeg',
+            action=URIAction(uri='https://i.imgur.com/rvz8BId.jpeg')
+        ),
+        ImageCarouselColumn(
+            image_url='https://i.imgur.com/W2n8LN5.jpeg',
+            action=URIAction(uri='https://i.imgur.com/W2n8LN5.jpeg')
+        ),
+        ImageCarouselColumn(
+            image_url='https://i.imgur.com/t2svPXe.jpeg',
+            action=URIAction(uri='https://i.imgur.com/t2svPXe.jpeg')
+        ),
+        ImageCarouselColumn(
+            image_url='https://i.imgur.com/CHTkxjH.jpeg',
+            action=URIAction(uri='https://i.imgur.com/CHTkxjH.jpeg')
+        )
+    ]
+
+    image_carousel_template = ImageCarouselTemplate(columns=image_carousel_columns)
+    template_message = TemplateSendMessage(
+        alt_text='教練介紹',
+        template=image_carousel_template
+        )
+    return template_message
+
+def store_info():
     flex_storeInfo = {
     "type":"carousel",
     "contents":[
