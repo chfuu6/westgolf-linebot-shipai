@@ -5,7 +5,7 @@ from linebot.models import (MessageEvent, TextMessage, TextSendMessage, Template
                             CarouselTemplate, MessageAction, URIAction, ImageCarouselColumn, ImageCarouselTemplate,
                             ImageSendMessage, FlexSendMessage)
 import os
-from api.basic import *
+from api.func import *
 
 line_bot_api = LineBotApi(os.getenv("LINE_CHANNEL_ACCESS_TOKEN"))
 line_handler = WebhookHandler(os.getenv("LINE_CHANNEL_SECRET"))
@@ -36,9 +36,8 @@ def callback():
 @line_handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
 
-
     if event.message.text == '教練介紹':
-        line_bot_api.reply_message(event.reply_token, coach_info())
+        line_bot_api.reply_message(event.reply_token, reservation())
     if event.message.text == '門市資訊':
         line_bot_api.reply_message(event.reply_token, store_info())
     if event.message.text == '課程預約':

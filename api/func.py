@@ -4,6 +4,71 @@ from linebot.models import (MessageEvent, TextMessage, TextSendMessage, Template
                             ImageSendMessage, FlexSendMessage)
 
 def reservation():
+    button1 = {
+    "type":"bubble",
+    "body":{
+        "type":"box",
+        "layout":"vertical",
+        "contents":[
+            {
+                "type":"text",
+                "weight":"bold",
+                "size":"xl",
+                "text":"預約課程",
+                "align":"center"
+            },
+            {
+                "type":"box",
+                "layout":"vertical",
+                "margin":"lg",
+                "spacing":"sm",
+                "contents":[
+                {
+                    "type":"text",
+                    "text":"歡迎預約課程！請選擇指定教練或不指定教練",
+                    "wrap":True
+                }
+                ]
+            }
+        ]
+    },
+    "footer":{
+        "type":"box",
+        "layout":"vertical",
+        "spacing":"sm",
+        "contents":[
+            {
+                "type":"button",
+                "height":"sm",
+                "action":{
+                "type":"message",
+                "label":"指定教練",
+                "text":"指定教練"
+                }
+            },
+            {
+                "type":"button",
+                "style":"link",
+                "height":"sm",
+                "action":{
+                "type":"message",
+                "label":"不指定教練",
+                "text":"不指定教練"
+                }
+            },
+            {
+                "type":"box",
+                "layout":"vertical",
+                "contents":[
+                
+                ],
+                "margin":"sm"
+            }
+        ],
+        "flex":0
+    }
+    }
+    return button1
     reservation = '感謝您的訊息\n\
 課程預約方式：\n\n\
 指定教練，請留下\n\
