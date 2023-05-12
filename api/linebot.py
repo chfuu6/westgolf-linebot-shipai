@@ -328,6 +328,18 @@ def handle_message(event):
                         },
                         {
                             "type":"box",
+                            "layout":"baseline",
+                            "contents":[
+                            {
+                                "type":"text",
+                                "text":" ",
+                                "flex":1,
+                                "size":"sm"
+                            }
+                            ]
+                        },
+                        {
+                            "type":"box",
                             "layout":"vertical",
                             "contents":[
                             {
@@ -355,20 +367,7 @@ def handle_message(event):
                             }
                             ],
                             "spacing":"sm"
-                        },
-                        {
-                            "type":"box",
-                            "layout":"baseline",
-                            "spacing":"sm",
-                            "contents":[
-                            {
-                                "type":"text",
-                                "text":" ",
-                                "flex":1,
-                                "size":"sm"
-                            }
-                            ]
-                        }                       
+                        }                    
                     ],
                     "paddingEnd":"none"
                 }
