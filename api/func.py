@@ -26,7 +26,8 @@ def reservation():
                 {
                     "type":"text",
                     "text":"歡迎預約課程！請選擇指定教練或不指定教練",
-                    "wrap":True
+                    "wrap":True,
+                    "offsetStart": "xs"
                 }
                 ]
             }

@@ -37,7 +37,7 @@ def callback():
 def handle_message(event):
 
     if event.message.text == '教練介紹':
-        line_bot_api.reply_message(event.reply_token, reservation())
+        line_bot_api.reply_message(event.reply_token, coach_info())
     if event.message.text == '門市資訊':
         line_bot_api.reply_message(event.reply_token, store_info())
     if event.message.text == '課程預約':
