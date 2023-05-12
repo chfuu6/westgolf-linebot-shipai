@@ -138,7 +138,7 @@ def handle_message(event):
                     },
                     {
                         "type": "text",
-                        "text": "台北市北投區承德路七段223之2號XX",
+                        "text": "台北市北投區承德路七段223之2號",
                         "color": "#666666",
                         "size": "sm",
                         "flex": 5,
@@ -154,17 +154,17 @@ def handle_message(event):
                     "contents": [
                     {
                         "type": "text",
-                        "text": "電話",
+                        "text": "ID",
+                        "flex": 1,
                         "color": "#aaaaaa",
-                        "size": "sm",
-                        "flex": 1
+                        "size": "sm"
                     },
                     {
                         "type": "text",
-                        "text": "2828-7313",
+                        "text": "@278cpcwm",
+                        "flex": 5,
                         "color": "#666666",
-                        "size": "sm",
-                        "flex": 5
+                        "size": "sm"
                     }
                     ]
                 },
