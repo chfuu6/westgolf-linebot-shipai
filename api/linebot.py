@@ -41,7 +41,12 @@ def handle_message(event):
     if event.message.text == '門市資訊':
         line_bot_api.reply_message(event.reply_token, store_info())
     if event.message.text == '課程預約':
-        line_bot_api.reply_message(event.reply_token, reservation())
+        line_bot_api.reply_message(event.reply_token, reservation('resevation'))
+    if event.message.text == '指定教練':
+        line_bot_api.reply_message(event.reply_token, reservation('specify'))
+    if event.message.text == '不指定教練':
+        line_bot_api.reply_message(event.reply_token, reservation('not specify'))
+
 
 
 if __name__ == "__main__":

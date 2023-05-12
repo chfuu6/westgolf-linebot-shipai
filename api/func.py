@@ -3,87 +3,129 @@ from linebot.models import (MessageEvent, TextMessage, TextSendMessage, Template
                             CarouselTemplate, MessageAction, URIAction, ImageCarouselColumn, ImageCarouselTemplate,
                             ImageSendMessage, FlexSendMessage)
 
-def reservation():
-    flex_button = {
-    "type":"bubble",
-    "body":{
-        "type":"box",
-        "layout":"vertical",
-        "contents":[
-            {
-                "type":"text",
-                "weight":"bold",
-                "size":"xl",
-                "text":"預約課程",
-                "align":"center"
-            },
-            {
-                "type":"box",
-                "layout":"vertical",
-                "margin":"lg",
-                "spacing":"sm",
-                "contents":[
+def reservation(event):
+    if event == 'reservation':
+        flex_button = {
+        "type":"bubble",
+        "body":{
+            "type":"box",
+            "layout":"vertical",
+            "contents":[
                 {
                     "type":"text",
-                    "text":"歡迎預約課程！請選擇指定教練或不指定教練",
-                    "wrap":True,
-                    "offsetStart": "xs"
+                    "weight":"bold",
+                    "size":"xl",
+                    "text":"預約課程",
+                    "align":"center"
+                },
+                {
+                    "type":"box",
+                    "layout":"vertical",
+                    "margin":"lg",
+                    "spacing":"sm",
+                    "contents":[
+                    {
+                        "type":"text",
+                        "text":"歡迎預約課程！請選擇指定教練或不指定教練",
+                        "wrap":True,
+                        "offsetStart": "sm"
+                    }
+                    ]
                 }
-                ]
-            }
-        ]
-    },
-    "footer":{
-        "type":"box",
-        "layout":"vertical",
-        "spacing":"sm",
-        "contents":[
-            {
-                "type":"button",
-                "height":"sm",
-                "action":{
-                "type":"message",
-                "label":"指定教練",
-                "text":"指定教練"
+            ]
+        },
+        "footer":{
+            "type":"box",
+            "layout":"vertical",
+            "spacing":"sm",
+            "contents":[
+                {
+                    "type":"button",
+                    "height":"sm",
+                    "action":{
+                    "type":"message",
+                    "label":"指定教練",
+                    "text":"指定教練"
+                    }
+                },
+                {
+                    "type":"button",
+                    "style":"link",
+                    "height":"sm",
+                    "action":{
+                    "type":"message",
+                    "label":"不指定教練",
+                    "text":"不指定教練"
+                    }
+                },
+                {
+                    "type":"box",
+                    "layout":"vertical",
+                    "contents":[
+                    
+                    ],
+                    "margin":"sm"
                 }
-            },
-            {
-                "type":"button",
-                "style":"link",
-                "height":"sm",
-                "action":{
-                "type":"message",
-                "label":"不指定教練",
-                "text":"不指定教練"
+            ],
+            "flex":0
+        }
+        }
+        
+        flex_message = FlexSendMessage(alt_text='門市資訊', contents=flex_button)
+        return flex_message
+    elif event == 'specify':
+        flex_specify = {
+        "type":"bubble",
+        "body":{
+            "type":"box",
+            "layout":"vertical",
+            "contents":[
+                {
+                    "type":"text",
+                    "weight":"bold",
+                    "size":"xl",
+                    "text":"指定教練",
+                    "align":"center"
+                },
+                {
+                    "type":"box",
+                    "layout":"vertical",
+                    "margin":"lg",
+                    "spacing":"sm",
+                    "contents":[
+                    {
+                        "type":"text",
+                        "text":"請留下指定的教練與您的電話和方便預約的時間",
+                        "wrap":True,
+                        "offsetStart":"xs"
+                    },
+                    {
+                        "type":"text",
+                        "text":"none",
+                        "color":"#FFFFFF"
+                    },
+                    {
+                        "type":"text",
+                        "text":"教練："
+                    },
+                    {
+                        "type":"text",
+                        "text":"手機："
+                    },
+                    {
+                        "type":"text",
+                        "text":"預約日期與時段："
+                    }
+                    ]
                 }
-            },
-            {
-                "type":"box",
-                "layout":"vertical",
-                "contents":[
-                
-                ],
-                "margin":"sm"
-            }
-        ],
-        "flex":0
-    }
-    }
+            ]
+        }
+        }
+        flex_message = FlexSendMessage(alt_text='指定教練', contents=flex_specify)
+        return flex_message
+    elif event == 'not specify':
+        pass
     
-    flex_message = FlexSendMessage(alt_text='門市資訊', contents=flex_button)
-    return flex_message
-    reservation = '感謝您的訊息\n\
-課程預約方式：\n\n\
-指定教練，請留下\n\
-1、指定教練的姓名，2、自己的聯絡電話，3、預約上課的日期、時段。\n\
-小編會聯繫教練，快速地回覆您的訊息。\n\n\
-不指定教練，請留下\n\
-1、自己的聯絡電話，2、預約上課的日期、時段。\n\
-小編會盡速為您安排'
-
-    text_reservation = TextSendMessage(text=reservation)
-    return text_reservation
-
 def coach_info():
     image_carousel_columns = [
         ImageCarouselColumn(
