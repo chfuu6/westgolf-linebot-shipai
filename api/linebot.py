@@ -252,7 +252,7 @@ def handle_message(event):
                 "contents":[
                 {
                     "type":"text",
-                    "text":"石牌門市",
+                    "text":"碧潭門市",
                     "weight":"bold",
                     "size":"xl"
                 },
@@ -355,8 +355,13 @@ def handle_message(event):
                             }
                             ],
                             "spacing":"sm"
+                        },
+                        {
+                            "type":"box",
+                            "layout":"baseline",
+                            "spacing":"sm",
+                            "contents":[]
                         }
-                    ],
                     "paddingEnd":"none"
                 }
                 ]
