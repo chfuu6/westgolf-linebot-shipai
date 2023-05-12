@@ -138,7 +138,7 @@ def handle_message(event):
                     },
                     {
                         "type": "text",
-                        "text": "台北市北投區承德路七段223之2號",
+                        "text": "台北市北投區承德路七段223之2號X",
                         "color": "#666666",
                         "size": "sm",
                         "flex": 5,
