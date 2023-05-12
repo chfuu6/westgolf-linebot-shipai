@@ -86,10 +86,6 @@ def handle_message(event):
             "size": "full",
             "aspectRatio": "20:13",
             "aspectMode": "cover",
-            "action": {
-            "type": "uri",
-            "uri": "http://linecorp.com/"
-            }
         },
         "body": {
             "type": "box",
@@ -146,7 +142,8 @@ def handle_message(event):
                         "color": "#666666",
                         "size": "sm",
                         "flex": 5,
-                        "adjustMode": "shrink-to-fit"
+                        "adjustMode": "shrink-to-fit",
+                        "wrap": True
                     }
                     ]
                 },
@@ -191,7 +188,7 @@ def handle_message(event):
             "contents": [
             {
                 "type": "button",
-                "style": "link",
+                "style": "primary",
                 "height": "sm",
                 "action": {
                 "type": "uri",
@@ -201,7 +198,7 @@ def handle_message(event):
             },
             {
                 "type": "button",
-                "style": "link",
+                "style": "secondary",
                 "height": "sm",
                 "action": {
                 "type": "uri",
@@ -221,7 +218,7 @@ def handle_message(event):
             ],
             "flex": 0
         }
-        }
+    }
     flex_message = FlexSendMessage(alt_text='門市資訊', contents=flex_storeInfo)
     
     businessHours = '西鈞高爾夫推廣中心\n\
