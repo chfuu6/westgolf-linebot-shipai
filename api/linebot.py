@@ -150,6 +150,7 @@ def handle_message(event):
                 {
                     "type": "box",
                     "layout": "baseline",
+                    "spacing": "sm",
                     "contents": [
                     {
                         "type": "text",
