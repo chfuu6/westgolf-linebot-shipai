@@ -428,12 +428,13 @@ def handle_message(event):
         template=image_carousel_template
         )
 
+    test = store_info(event)
     if event.message.text == '教練介紹':
         line_bot_api.reply_message(event.reply_token, template_message)
     # if event.message.text == '費用介紹':
     #     line_bot_api.reply_message(event.reply_token, image_fee)
     if event.message.text == '門市資訊':
-        line_bot_api.reply_message(event.reply_token, store_info(event))
+        line_bot_api.reply_message(event.reply_token, test)
     if event.message.text == '課程預約':
         line_bot_api.reply_message(event.reply_token, text_reservation)
 
