@@ -122,7 +122,6 @@ def handle_message(event):
                     {
                         "type": "text",
                         "text": "2828-7313",
-                        "wrap": True,
                         "color": "#666666",
                         "size": "sm",
                         "flex": 5
@@ -144,7 +143,6 @@ def handle_message(event):
                     {
                         "type": "text",
                         "text": "台北市北投區承德路七段223之2號",
-                        "wrap": True,
                         "color": "#666666",
                         "size": "sm",
                         "flex": 5
@@ -196,8 +194,8 @@ def handle_message(event):
                 "height": "sm",
                 "action": {
                 "type": "uri",
-                "label": "CALL",
-                "uri": "https://linecorp.com"
+                "label": "電話",
+                "uri": "tel:1234567890"
                 }
             },
             {
@@ -206,8 +204,11 @@ def handle_message(event):
                 "height": "sm",
                 "action": {
                 "type": "uri",
-                "label": "WEBSITE",
-                "uri": "https://linecorp.com"
+                "label": "官方網站",
+                "uri": "https://linecorp.com",
+                "altUri": {
+                    "desktop": "https://jimmy2130.github.io/WestGolf/index.html"
+                }
                 }
             },
             {
@@ -219,7 +220,7 @@ def handle_message(event):
             ],
             "flex": 0
         }
-    }
+        }
     flex_message = FlexSendMessage(alt_text='門市資訊', contents=flex_storeInfo)
     
     businessHours = '西鈞高爾夫推廣中心\n\
