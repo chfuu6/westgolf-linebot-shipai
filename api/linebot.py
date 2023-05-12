@@ -120,7 +120,7 @@ def handle_message(event):
                         "text": "2828-7313",
                         "color": "#666666",
                         "size": "sm",
-                        "flex": 6
+                        "flex": 5
                     }
                     ]
                 },
@@ -141,7 +141,7 @@ def handle_message(event):
                         "text": "台北市北投區承德路七段223之2號",
                         "color": "#666666",
                         "size": "sm",
-                        "flex": 6,
+                        "flex": 5,
                         "adjustMode": "shrink-to-fit",
                         "wrap": True
                     }
@@ -154,17 +154,17 @@ def handle_message(event):
                     "contents": [
                     {
                         "type": "text",
-                        "text": "ID",
-                        "flex": 1,
+                        "text": "電話",
                         "color": "#aaaaaa",
-                        "size": "sm"
+                        "size": "sm",
+                        "flex": 1
                     },
                     {
                         "type": "text",
-                        "text": "@278cpcwm",
-                        "flex": 5,
+                        "text": "2828-7313",
                         "color": "#666666",
-                        "size": "sm"
+                        "size": "sm",
+                        "flex": 5
                     }
                     ]
                 },
