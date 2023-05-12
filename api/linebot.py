@@ -82,7 +82,7 @@ def handle_message(event):
         "type": "bubble",
         "hero": {
             "type": "image",
-            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
+            "url": "https://i.imgur.com/WJRfiH5.jpeg",
             "size": "full",
             "aspectRatio": "20:13",
             "aspectMode": "cover",
@@ -101,7 +101,7 @@ def handle_message(event):
                 "type": "box",
                 "layout": "vertical",
                 "margin": "lg",
-                "spacing": "md",
+                "spacing": "sm",
                 "contents": [
                 {
                     "type": "box",
