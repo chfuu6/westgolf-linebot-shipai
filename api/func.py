@@ -124,7 +124,51 @@ def reservation(event):
         flex_message = FlexSendMessage(alt_text='指定教練', contents=flex_specify)
         return flex_message
     elif event == 'not specify':
-        pass
+        flex_notspecify = {
+        "type":"bubble",
+        "body":{
+            "type":"box",
+            "layout":"vertical",
+            "contents":[
+                {
+                    "type":"text",
+                    "weight":"bold",
+                    "size":"xl",
+                    "text":"不指定教練",
+                    "align":"center"
+                },
+                {
+                    "type":"box",
+                    "layout":"vertical",
+                    "margin":"lg",
+                    "spacing":"sm",
+                    "contents":[
+                    {
+                        "type":"text",
+                        "text":"請留下指定的教練與您的電話和方便預約的時間",
+                        "wrap":True,
+                        "offsetStart":"xs"
+                    },
+                    {
+                        "type":"text",
+                        "text":"none",
+                        "color":"#FFFFFF"
+                    },
+                    {
+                        "type":"text",
+                        "text":"手機："
+                    },
+                    {
+                        "type":"text",
+                        "text":"預約日期與時段："
+                    }
+                    ]
+                }
+            ]
+        }
+        }
+        flex_message = FlexSendMessage(alt_text='不指定教練', contents=flex_notspecify)
+        return flex_message
     
 def coach_info():
     image_carousel_columns = [
