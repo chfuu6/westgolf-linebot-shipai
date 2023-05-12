@@ -416,7 +416,7 @@ def store_info():
                             },
                             {
                                 "type":"text",
-                                "text":"2828-7313",
+                                "text":"2212-6041",
                                 "color":"#666666",
                                 "size":"sm",
                                 "flex":5
