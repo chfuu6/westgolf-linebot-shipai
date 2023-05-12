@@ -122,6 +122,7 @@ def handle_message(event):
                     {
                         "type": "text",
                         "text": "2828-7313",
+                        "wrap": True,
                         "color": "#666666",
                         "size": "sm",
                         "flex": 5
@@ -143,6 +144,7 @@ def handle_message(event):
                     {
                         "type": "text",
                         "text": "台北市北投區承德路七段223之2號",
+                        "wrap": True,
                         "color": "#666666",
                         "size": "sm",
                         "flex": 5
