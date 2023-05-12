@@ -428,7 +428,7 @@ def handle_message(event):
         template=image_carousel_template
         )
 
-    test = store_info(event)
+    test = store_info.store_info(event)
     if event.message.text == '教練介紹':
         line_bot_api.reply_message(event.reply_token, template_message)
     # if event.message.text == '費用介紹':
