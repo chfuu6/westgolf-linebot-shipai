@@ -145,7 +145,7 @@ def reservation(event):
                     "contents":[
                     {
                         "type":"text",
-                        "text":"請留下指定的教練與您的電話和方便預約的時間，小編會盡速為您安排！",
+                        "text":"請留下您的電話和方便預約的時間，小編會盡速為您安排！",
                         "wrap":True,
                         "offsetStart":"xs"
                     },
