@@ -381,7 +381,7 @@ def store_info():
             "type":"bubble",
             "hero":{
                 "type":"image",
-                "url":"https://i.imgur.com/DoxF2LK.jpeg",
+                "url":"https://i.imgur.com/BGvR9mb.jpeg",
                 "size":"full",
                 "aspectRatio":"20:13",
                 "aspectMode":"cover"
