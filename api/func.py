@@ -2,6 +2,7 @@ from linebot import LineBotApi, WebhookHandler
 from linebot.models import (MessageEvent, TextMessage, TextSendMessage, TemplateSendMessage, CarouselColumn,
                             CarouselTemplate, MessageAction, URIAction, ImageCarouselColumn, ImageCarouselTemplate,
                             ImageSendMessage, FlexSendMessage)
+# this comment is written on July eighth
 
 def reservation(event):
     if event == 'reservation':
