@@ -3,8 +3,6 @@ from linebot.models import (MessageEvent, TextMessage, TextSendMessage, Template
                             CarouselTemplate, MessageAction, URIAction, ImageCarouselColumn, ImageCarouselTemplate,
                             ImageSendMessage, FlexSendMessage)
 
-# something is happening
-
 def reservation(event):
     if event == 'reservation':
         flex_button = {
@@ -552,3 +550,5 @@ def store_info():
 
     flex_message = FlexSendMessage(alt_text='門市資訊', contents=flex_storeInfo)
     return flex_message
+
+# something is happening
