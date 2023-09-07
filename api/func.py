@@ -3,6 +3,7 @@ from linebot.models import (MessageEvent, TextMessage, TextSendMessage, Template
                             CarouselTemplate, MessageAction, URIAction, ImageCarouselColumn, ImageCarouselTemplate,
                             ImageSendMessage, FlexSendMessage)
 
+#test message
 def reservation(event):
     if event == 'reservation':
         flex_button = {
