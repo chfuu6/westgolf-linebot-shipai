@@ -181,8 +181,8 @@ def coach_info():
             action=URIAction(uri='https://i.imgur.com/jHR50KF.jpeg')
         ),
         ImageCarouselColumn(
-            image_url='https://i.imgur.com/uqLFtAR.jpeg',
-            action=URIAction(uri='https://i.imgur.com/uqLFtAR.jpeg')
+            image_url='https://i.imgur.com/21lmnJQ.jpeg',
+            action=URIAction(uri='https://i.imgur.com/21lmnJQ.jpeg')
         ),
         ImageCarouselColumn(
             image_url='https://i.imgur.com/Sy2MTkQ.jpeg',
