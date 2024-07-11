@@ -173,36 +173,36 @@ def reservation(event):
 def coach_info():
     image_carousel_columns = [
         ImageCarouselColumn(
-            image_url='https://i.imgur.com/DrFIHA1.jpeg',
-            action=URIAction(uri='https://i.imgur.com/DrFIHA1.jpeg')
+            image_url='https://i.imgur.com/EAkqWpS.jpeg',
+            action=URIAction(uri='https://i.imgur.com/EAkqWpS.jpeg')
         ),
         ImageCarouselColumn(
-            image_url='https://i.imgur.com/jHR50KF.jpeg',
-            action=URIAction(uri='https://i.imgur.com/jHR50KF.jpeg')
+            image_url='https://i.imgur.com/ZbFsxZe.jpeg',
+            action=URIAction(uri='https://i.imgur.com/ZbFsxZe.jpeg')
         ),
         ImageCarouselColumn(
-            image_url='https://i.imgur.com/21lmnJQ.jpeg',
-            action=URIAction(uri='https://i.imgur.com/21lmnJQ.jpeg')
+            image_url='https://i.imgur.com/Fqr9fO8.jpeg',
+            action=URIAction(uri='https://i.imgur.com/Fqr9fO8.jpeg')
         ),
         ImageCarouselColumn(
-            image_url='https://i.imgur.com/Sy2MTkQ.jpeg',
-            action=URIAction(uri='https://i.imgur.com/Sy2MTkQ.jpeg')
+            image_url='https://i.imgur.com/WJzkt9i.jpeg',
+            action=URIAction(uri='https://i.imgur.com/WJzkt9i.jpeg')
         ),
         ImageCarouselColumn(
-            image_url='https://i.imgur.com/doKPQdf.jpeg',
-            action=URIAction(uri='https://i.imgur.com/doKPQdf.jpeg')
+            image_url='https://i.imgur.com/4yboQfe.jpeg',
+            action=URIAction(uri='https://i.imgur.com/4yboQfe.jpeg')
         ),
         ImageCarouselColumn(
-            image_url='https://i.imgur.com/rvz8BId.jpeg',
-            action=URIAction(uri='https://i.imgur.com/rvz8BId.jpeg')
+            image_url='https://i.imgur.com/F0hDI7d.jpeg',
+            action=URIAction(uri='https://i.imgur.com/F0hDI7d.jpeg')
         ),
         ImageCarouselColumn(
-            image_url='https://i.imgur.com/t2svPXe.jpeg',
-            action=URIAction(uri='https://i.imgur.com/t2svPXe.jpeg')
+            image_url='https://i.imgur.com/4dZxgwb.jpeg',
+            action=URIAction(uri='https://i.imgur.com/4dZxgwb.jpeg')
         ),
         ImageCarouselColumn(
-            image_url='https://i.imgur.com/CHTkxjH.jpeg',
-            action=URIAction(uri='https://i.imgur.com/CHTkxjH.jpeg')
+            image_url='https://i.imgur.com/bNyKYgy.jpeg',
+            action=URIAction(uri='https://i.imgur.com/bNyKYgy.jpeg')
         )
     ]
 
