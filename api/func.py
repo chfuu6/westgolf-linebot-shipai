@@ -189,20 +189,20 @@ def coach_info():
             action=URIAction(uri='https://i.imgur.com/WJzkt9i.jpeg')
         ),
         ImageCarouselColumn(
-            image_url='https://i.imgur.com/4yboQfe.jpeg',
-            action=URIAction(uri='https://i.imgur.com/4yboQfe.jpeg')
+            image_url='https://i.imgur.com/7QaOd24.jpeg',
+            action=URIAction(uri='https://i.imgur.com/7QaOd24.jpeg')
         ),
         ImageCarouselColumn(
             image_url='https://i.imgur.com/F0hDI7d.jpeg',
             action=URIAction(uri='https://i.imgur.com/F0hDI7d.jpeg')
         ),
         ImageCarouselColumn(
-            image_url='https://i.imgur.com/4dZxgwb.jpeg',
-            action=URIAction(uri='https://i.imgur.com/4dZxgwb.jpeg')
+            image_url='https://i.imgur.com/gkvwVTd.jpeg',
+            action=URIAction(uri='https://i.imgur.com/gkvwVTd.jpeg')
         ),
         ImageCarouselColumn(
-            image_url='https://i.imgur.com/bNyKYgy.jpeg',
-            action=URIAction(uri='https://i.imgur.com/bNyKYgy.jpeg')
+            image_url='https://i.imgur.com/j7m8No2.jpeg',
+            action=URIAction(uri='https://i.imgur.com/j7m8No2.jpeg')
         )
     ]
 
