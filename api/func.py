@@ -203,6 +203,10 @@ def coach_info():
         ImageCarouselColumn(
             image_url='https://i.imgur.com/j7m8No2.jpeg',
             action=URIAction(uri='https://i.imgur.com/j7m8No2.jpeg')
+        ),
+        ImageCarouselColumn(
+            image_url='https://i.meee.com.tw/JTJcTna.jpg',
+            action=URIAction(uri='https://i.meee.com.tw/JTJcTna.jpg')
         )
     ]
 
